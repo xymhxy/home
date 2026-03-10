@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梦幻西游工具箱</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 动态线条背景 -->
+    <canvas id="line-canvas"></canvas>
+    
+    <!-- 鼠标跟随效果 -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+    <div class="cursor-pointer" id="cursor-pointer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4L10.5 20L13 13L20 10.5L4 4Z" fill="#2d3748" stroke="#2d3748" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13 13L18 18" stroke="#2d3748" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    
+    <!-- 主题切换按钮 -->
+    <div class="theme-switcher">
+        <span class="theme-label">主题色：</span>
+        <button class="theme-btn active" data-theme="white" title="纯净白">
+            <span class="color-dot white"></span>
+        </button>
+        <button class="theme-btn" data-theme="blue" title="海洋蓝">
+            <span class="color-dot blue"></span>
+        </button>
+        <button class="theme-btn" data-theme="purple" title="梦幻紫">
+            <span class="color-dot purple"></span>
+        </button>
+        <button class="theme-btn" data-theme="green" title="清新绿">
+            <span class="color-dot green"></span>
+        </button>
+        <button class="theme-btn" data-theme="pink" title="樱花粉">
+            <span class="color-dot pink"></span>
+        </button>
+        <button class="theme-btn" data-theme="dark" title="暗夜黑">
+            <span class="color-dot dark"></span>
+        </button>
+    </div>
+
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">🎮</div>
+                <h1>梦幻西游工具箱</h1>
+            </div>
+            <p class="subtitle">简单便捷的网页工具  | 作者：xyanwechat</p>
+        </header>
+
+        <!-- 工具目录 -->
+        <main class="main-content">
+            <div class="category">
+                <div class="category-header">
+                    <span class="category-icon">⚔️</span>
+                    <h2>梦幻西游工具</h2>
+                    <span class="category-count">2 个工具</span>
+                </div>
+                
+                <div class="tools-grid">
+                    <!-- PK愤怒计算器 -->
+                    <div class="tool-card" onclick="openTool('pk-anger')" >
+                        <div class="tool-icon pk-anger" >
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="currentColor"/>
+                                <circle cx="8.5" cy="9.5" r="1.5" fill="currentColor"/>
+                                <circle cx="15.5" cy="9.5" r="1.5" fill="currentColor"/>
+                                <path d="M12 18c2.28 0 4.22-1.66 5-4H7c.78 2.34 2.72 4 5 4z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="tool-info">
+                            <h3>PK愤怒计算器</h3>
+                            <p>简单无脑的愤怒计算</p>
+                        </div>
+                        <div class="tool-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- 19门准备工具 -->
+                    <div class="tool-card" onclick="openTool('19-gates')">
+                        <div class="tool-icon gates-19">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-4v-4h4v4zm0-6h-4V7h4v4z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="tool-info">
+                            <h3>19门准备工具</h3>
+                            <p>19门活动准备清单与提醒</p>
+                        </div>
+                        <div class="tool-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>特别说明：本页面所有工具均为离线页面，不涉及任何联网或读取游戏数据/个人电脑数据等行为，仅作为网页计算工具。</p>如有其他工具需求，请联系xyanwechat，看精力制作添加 ^ ^</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="background-lines.js"></script>
+    <script src="cursor-effect.js"></script>
+</body>
+</html>
