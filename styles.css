@@ -414,6 +414,11 @@ a, button, .tool-card, .theme-btn {
     color: white;
 }
 
+.tool-icon.wuse-lingchen {
+    background: linear-gradient(135deg, #fa709a, #fee140);
+    color: white;
+}
+
 /* 工具信息 */
 .tool-info {
     flex: 1;
