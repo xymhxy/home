@@ -53,11 +53,11 @@ function openTool(toolId) {
     const tools = {
         'pk-anger': {
             name: 'PK愤怒计算器',
-            url: 'https://www.baidu.com'
+            url: 'https://xymhxy.github.io/mhxytool/'
         },
         '19-gates': {
             name: '19门准备工具',
-            url: 'https://www.baidu.com'
+            url: 'https://xymhxy.github.io/18men-xyanwechat/'
         },
         'wuse-lingchen': {
             name: '五色灵尘计算器',
@@ -168,3 +168,4 @@ document.querySelectorAll('.tool-card').forEach(card => {
         this.style.transform = '';
     }, { passive: true });
 });
+
