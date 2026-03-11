@@ -62,6 +62,10 @@ function openTool(toolId) {
         'wuse-lingchen': {
             name: '五色灵尘计算器',
             url: 'https://xymhxy.github.io/wuselingchen/'
+        },
+        'paohuan': {
+            name: '跑环成本计算器',
+            url: 'https://xymhxy.github.io/paohuan/'
         }
     };
     
@@ -160,3 +164,4 @@ document.querySelectorAll('.tool-card').forEach(card => {
         this.style.transform = '';
     }, { passive: true });
 });
+
