@@ -418,6 +418,10 @@ a, button, .tool-card, .theme-btn {
     background: linear-gradient(135deg, #fa709a, #fee140);
     color: white;
 }
+.tool-icon.paohuan {
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    color: #2d3748;
+}
 
 /* 工具信息 */
 .tool-info {
@@ -587,3 +591,4 @@ a, button, .tool-card, .theme-btn {
 .tool-card:hover::before {
     opacity: 1;
 }
+
