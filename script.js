@@ -53,11 +53,11 @@ function openTool(toolId) {
     const tools = {
         'pk-anger': {
             name: 'PK愤怒计算器',
-           url: 'https://xymhxy.github.io/mhxytool/'
+            url: 'https://www.baidu.com'
         },
         '19-gates': {
             name: '19门准备工具',
-          url: 'https://xymhxy.github.io/18men-xyanwechat/'
+            url: 'https://www.baidu.com'
         },
         'wuse-lingchen': {
             name: '五色灵尘计算器',
@@ -66,6 +66,10 @@ function openTool(toolId) {
         'paohuan': {
             name: '跑环成本计算器',
             url: 'https://xymhxy.github.io/paohuan/'
+        },
+        'shangguyupo': {
+            name: '上古玉魄鉴定玩法',
+            url: 'https://xymhxy.github.io/shangguyupo/'
         }
     };
     
@@ -164,4 +168,3 @@ document.querySelectorAll('.tool-card').forEach(card => {
         this.style.transform = '';
     }, { passive: true });
 });
-
