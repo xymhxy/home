@@ -74,6 +74,10 @@ function openTool(toolId) {
         'jinjia': {
             name: '梦幻西游全服金价',
             url: 'https://xymhxy.github.io/jinjia/'
+        },
+        'diaoxianjiance': {
+            name: '梦幻西游掉线检测工具',
+            url: 'https://xymhxy.github.io/diaoxianjiance/'
         }
     };
     
