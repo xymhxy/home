@@ -70,6 +70,10 @@ function openTool(toolId) {
         'shangguyupo': {
             name: '上古玉魄鉴定玩法',
             url: 'https://xymhxy.github.io/shangguyupo/'
+        },
+        'jinjia': {
+            name: '梦幻西游全服金价',
+            url: 'https://xymhxy.github.io/jinjia/'
         }
     };
     
@@ -168,4 +172,3 @@ document.querySelectorAll('.tool-card').forEach(card => {
         this.style.transform = '';
     }, { passive: true });
 });
-
