@@ -429,6 +429,11 @@ a, button, .tool-card, .theme-btn {
     color: white;
 }
 
+.tool-icon.jinjia {
+    background: linear-gradient(135deg, #f5af19, #f12711);
+    color: white;
+}
+
 /* 工具信息 */
 .tool-info {
     flex: 1;
