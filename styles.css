@@ -434,6 +434,11 @@ a, button, .tool-card, .theme-btn {
     color: white;
 }
 
+.tool-icon.diaoxianjiance {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: white;
+}
+
 /* 工具信息 */
 .tool-info {
     flex: 1;
